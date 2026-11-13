@@ -263,9 +263,13 @@
         <!-- COPY / FORM: paste the finalised research newsletter form here.
              Suggested fields: full name, organisation, email, areas of interest,
              consent checkbox. Connect to the mailing provider. -->
-        <form class="flex flex-col gap-3 rounded-lg border-2 border-dashed border-navy-200 p-6 sm:flex-row" onsubmit="return false;">
+        <form name="research-newsletter" method="POST" netlify netlify-honeypot="bot-field" class="flex flex-col gap-3 rounded-lg border-2 border-dashed border-navy-200 p-6 sm:flex-row">
+          <input type="hidden" name="form-name" value="research-newsletter" />
+          <p class="hidden">
+            <label>Do not fill this out if you are human: <input name="bot-field" /></label>
+          </p>
           <label class="sr-only" for="research-email">Email address</label>
-          <input id="research-email" type="email" required placeholder="you@organisation.com"
+          <input id="research-email" name="email" type="email" required placeholder="you@organisation.com"
             class="w-full rounded border border-charcoal/20 bg-white px-4 py-3 text-sm text-charcoal placeholder:text-slate-400 focus:border-navy focus:outline-none" />
           <button type="submit" class="rounded bg-gold px-6 py-3 text-sm font-semibold text-navy transition hover:bg-gold-dark">Subscribe</button>
         </form>
