@@ -392,8 +392,11 @@
           <div class="rule-gold my-6"></div>
         </div>
 
-        <form name="trade-inquiry" method="POST" data-netlify="true" class="mt-10 rounded-lg bg-navy-50 p-8 ring-1 ring-slate-100">
+        <form name="trade-inquiry" method="POST" netlify netlify-honeypot="bot-field" class="mt-10 rounded-lg bg-navy-50 p-8 ring-1 ring-slate-100">
           <input type="hidden" name="form-name" value="trade-inquiry" />
+          <p class="hidden">
+            <label>Do not fill this out if you are human: <input name="bot-field" /></label>
+          </p>
 
           <div class="grid gap-5 sm:grid-cols-2">
             <div>

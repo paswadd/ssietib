@@ -98,22 +98,5 @@
     document.querySelectorAll("[data-year]").forEach(function (el) {
       el.textContent = "2026";
     });
-
-    /* ---- Contact form (demo handler) ---- */
-    var form = document.querySelector("[data-contact-form]");
-    if (form) {
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-        var status = form.querySelector("[data-form-status]");
-        if (status) {
-          status.textContent =
-            "Thank you. Your enquiry has been recorded and a member of our team will respond shortly.";
-          status.classList.remove("hidden");
-          status.setAttribute("role", "status");
-          status.focus();
-        }
-        form.reset();
-      });
-    }
   });
 })();
