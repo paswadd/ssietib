@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | SSIETIB</title>
+  <meta name="description" content="Learn about the South Sudan International Economic, Trade and Investment Bureau (SSIETIB): our mandate, mission, vision, values and leadership." />
+  <link rel="icon" href="assets/images/logo.jpeg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/js/tailwind.config.js"></script>
+  <link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body class="bg-white font-sans text-ink antialiased">
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ============================= HEADER / GLOBAL NAV ============================= -->
+    <header data-header class="sticky top-0 z-50 bg-navy/95 text-white backdrop-blur border-b border-white/10">
+    <!-- Utility bar -->
+    <div class="hidden border-b border-white/10 bg-charcoal/95 lg:block">
+      <div class="mx-auto flex h-9 max-w-content items-center justify-between px-6 text-xs text-mist">
+        <p>An independent, private, non-governmental and non-profit organization.</p>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-gold" href="mailto:info@ssietib.org">info@ssietib.org</a>
+          <span class="text-white/30" aria-hidden="true">|</span>
+          <a class="hover:text-gold" href="tel:+211927088875">+211 927 088 875</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mx-auto max-w-content px-6">
+      <div class="flex h-16 items-center gap-4 lg:h-20">
+        <!-- Brand -->
+        <a href="index.html" class="flex min-w-0 max-w-[200px] flex-none items-center gap-3 lg:w-1/4">
+          <img src="assets/images/logo.jpeg" alt="SSIETIB emblem" class="h-11 w-11 flex-none rounded object-cover ring-1 ring-gold/40" />
+          <span class="min-w-0 leading-tight">
+            <span class="block text-base font-semibold tracking-wide">SSIETIB</span>
+            <span class="mt-0.5 hidden text-xs leading-snug text-gray-400 sm:line-clamp-2">Connecting South Sudan to Global Trade, Investment and Economic Partnerships.</span>
+          </span>
+        </a>
+
+        <!-- Primary navigation -->
+        <nav class="hidden min-w-0 flex-1 items-center justify-end gap-4 xl:flex" aria-label="Primary">
+          <a data-nav-link href="index.html" class="whitespace-nowrap border-b-2 border-transparent px-1 py-2 text-xs font-medium text-slate-200 transition-colors hover:border-gold hover:text-gold">Home</a>
+          <a data-nav-link href="about.html" class="whitespace-nowrap border-b-2 border-transparent px-1 py-2 text-xs font-medium text-slate-200 transition-colors hover:border-gold hover:text-gold">About Us</a>
+          <a data-nav-link href="trade-exports.html" class="whitespace-nowrap border-b-2 border-transparent px-1 py-2 text-xs font-medium text-slate-200 transition-colors hover:border-gold hover:text-gold">Trade &amp; Exports</a>
+          <a data-nav-link href="investment.html" class="whitespace-nowrap border-b-2 border-transparent px-1 py-2 text-xs font-medium text-slate-200 transition-colors hover:border-gold hover:text-gold">Invest in South Sudan</a>
+          <a data-nav-link href="network.html" class="whitespace-nowrap border-b-2 border-transparent px-1 py-2 text-xs font-medium text-slate-200 transition-colors hover:border-gold hover:text-gold">Business Network</a>
+          <a data-nav-link href="international-cooperation.html" class="whitespace-nowrap border-b-2 border-transparent px-1 py-2 text-xs font-medium text-slate-200 transition-colors hover:border-gold hover:text-gold">International Cooperation</a>
+          <!-- More dropdown -->
+          <div data-nav-dropdown class="relative">
+            <button type="button" data-dropdown-toggle aria-haspopup="true" aria-expanded="false" class="flex items-center gap-1 whitespace-nowrap border-b-2 border-transparent px-1 py-2 text-xs font-medium text-slate-200 transition-colors hover:border-gold hover:text-gold">
+              More
+              <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6" /></svg>
+            </button>
+            <div data-nav-dropdown-menu class="absolute right-0 top-full z-50 w-64 rounded-md border border-charcoal/10 bg-white p-2 shadow-xl">
+              <a data-nav-link href="events.html" class="block whitespace-nowrap rounded px-3 py-2 text-sm text-charcoal hover:bg-navy-50 hover:text-navy">Events &amp; Trade Missions</a>
+              <a data-nav-link href="research-publications.html" class="block whitespace-nowrap rounded px-3 py-2 text-sm text-charcoal hover:bg-navy-50 hover:text-navy">Research &amp; Publications</a>
+              <a data-nav-link href="news.html" class="block whitespace-nowrap rounded px-3 py-2 text-sm text-charcoal hover:bg-navy-50 hover:text-navy">News &amp; Updates</a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Language selector + CTA -->
+        <div class="flex flex-none items-center gap-3">
+          <div class="lang-switch hidden items-center overflow-hidden rounded border border-white/25 sm:flex" role="group" aria-label="Select language">
+            <a href="index.html" hreflang="en" lang="en" aria-current="true" class="whitespace-nowrap bg-gold px-2 py-1.5 text-xs font-semibold text-navy">English</a>
+            <a href="zh/index.html" hreflang="zh-Hans" lang="zh-Hans" class="whitespace-nowrap px-2 py-1.5 text-xs font-semibold text-white hover:text-gold">&#20013;&#25991;</a>
+          </div>
+          <a href="contact.html" class="hidden whitespace-nowrap rounded bg-gold px-4 py-2.5 text-sm font-semibold text-navy transition hover:bg-gold-dark lg:inline-block">Contact Us</a>
+          <button data-nav-toggle type="button" aria-expanded="false" aria-label="Toggle navigation" aria-controls="primary-menu-mobile"
+            class="inline-flex items-center justify-center rounded p-2 text-white ring-1 ring-white/20 xl:hidden">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" /></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div data-nav-menu id="primary-menu-mobile" class="xl:hidden">
+      <nav class="mx-auto max-w-content space-y-1 px-6 pb-6" aria-label="Mobile">
+        <a data-nav-link href="index.html" class="block whitespace-nowrap rounded px-3 py-2.5 text-sm text-slate-200 hover:bg-white/5 hover:text-gold">Home</a>
+        <a data-nav-link href="about.html" class="block whitespace-nowrap rounded px-3 py-2.5 text-sm text-slate-200 hover:bg-white/5 hover:text-gold">About Us</a>
+        <a data-nav-link href="trade-exports.html" class="block whitespace-nowrap rounded px-3 py-2.5 text-sm text-slate-200 hover:bg-white/5 hover:text-gold">Trade &amp; Exports</a>
+        <a data-nav-link href="investment.html" class="block whitespace-nowrap rounded px-3 py-2.5 text-sm text-slate-200 hover:bg-white/5 hover:text-gold">Invest in South Sudan</a>
+        <a data-nav-link href="network.html" class="block whitespace-nowrap rounded px-3 py-2.5 text-sm text-slate-200 hover:bg-white/5 hover:text-gold">Business Network</a>
+        <a data-nav-link href="international-cooperation.html" class="block whitespace-nowrap rounded px-3 py-2.5 text-sm text-slate-200 hover:bg-white/5 hover:text-gold">International Cooperation</a>
+        <p class="px-3 pt-3 text-[11px] font-semibold uppercase tracking-widest text-mist">More</p>
+        <a data-nav-link href="events.html" class="block whitespace-nowrap rounded px-3 py-2.5 text-sm text-slate-200 hover:bg-white/5 hover:text-gold">Events &amp; Trade Missions</a>
+        <a data-nav-link href="research-publications.html" class="block whitespace-nowrap rounded px-3 py-2.5 text-sm text-slate-200 hover:bg-white/5 hover:text-gold">Research &amp; Publications</a>
+        <a data-nav-link href="news.html" class="block whitespace-nowrap rounded px-3 py-2.5 text-sm text-slate-200 hover:bg-white/5 hover:text-gold">News &amp; Updates</a>
+        <div class="lang-switch mt-3 flex items-center overflow-hidden rounded border border-white/25" role="group" aria-label="Select language">
+          <a href="index.html" hreflang="en" lang="en" aria-current="true" class="flex-1 bg-gold px-3 py-2 text-center text-xs font-semibold text-navy">English</a>
+          <a href="zh/index.html" hreflang="zh-Hans" lang="zh-Hans" class="flex-1 px-3 py-2 text-center text-xs font-semibold text-white hover:text-gold">&#20013;&#25991;</a>
+        </div>
+        <a href="contact.html" class="mt-2 block rounded bg-gold px-3 py-2.5 text-center text-sm font-semibold text-navy">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="main">
+    <!-- ============================= PAGE HERO ============================= -->
+    <section id="page-hero" class="relative isolate overflow-hidden bg-navy text-white">
+      <img src="assets/images/6.jpeg" alt="" class="absolute inset-0 h-full w-full object-cover opacity-20" />
+      <div class="absolute inset-0 bg-gradient-to-r from-navy via-navy/95 to-navy/60"></div>
+      <div class="relative mx-auto max-w-content px-6 py-20 lg:py-28">
+        <nav class="mb-4 text-xs text-mist" aria-label="Breadcrumb">
+          <a href="index.html" class="hover:text-gold">Home</a>
+          <span class="mx-2 text-white/30">/</span>
+          <span class="text-gold">About Us</span>
+        </nav>
+        <h1 class="max-w-3xl text-4xl font-semibold leading-tight sm:text-5xl">About SSIETIB</h1>
+        <p class="mt-5 max-w-2xl text-lg text-mist">
+          An independent, non-governmental bureau established to advance South Sudan&rsquo;s economic diplomacy,
+          trade and investment agenda on the world stage.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================= OVERVIEW ============================= -->
+    <section id="overview" class="bg-white py-20 lg:py-28">
+      <div class="mx-auto grid max-w-content gap-14 px-6 lg:grid-cols-3">
+        <div class="lg:col-span-2">
+          <span class="text-xs font-semibold uppercase tracking-[0.3em] text-gold-dark">Our story</span>
+          <h2 class="mt-3 text-3xl font-semibold text-navy sm:text-4xl">Building bridges between South Sudan and the global economy</h2>
+          <div class="rule-gold my-6"></div>
+          <!-- COPY: organisational overview (3-4 paragraphs) -->
+          <p class="text-slate-600">
+            SSIETIB was founded to provide a credible, neutral platform for international economic engagement with
+            South Sudan. We work with investors, exporters, governments, financiers and development institutions to
+            turn interest into tangible commercial outcomes.
+          </p>
+          <p class="mt-4 text-slate-600">
+            Our work spans market intelligence, investor facilitation, trade promotion, policy dialogue and
+            institutional partnerships. We are guided by transparency, independence and a long-term commitment to
+            inclusive growth.
+          </p>
+        </div>
+
+        <aside class="rounded-lg bg-navy-50 p-8 ring-1 ring-slate-100">
+          <h3 class="text-sm font-semibold uppercase tracking-widest text-navy">At a glance</h3>
+          <dl class="mt-6 space-y-5 text-sm">
+            <div>
+              <dt class="text-slate-500">Established</dt>
+              <dd class="mt-1 font-semibold text-navy">2026</dd>
+            </div>
+            <div>
+              <dt class="text-slate-500">Headquarters</dt>
+              <dd class="mt-1 font-semibold text-navy">Juba, South Sudan</dd>
+            </div>
+            <div>
+              <dt class="text-slate-500">Status</dt>
+              <dd class="mt-1 font-semibold text-navy">Independent, non-governmental</dd>
+            </div>
+            <div>
+              <dt class="text-slate-500">Reach</dt>
+              <dd class="mt-1 font-semibold text-navy">Africa, Asia, Middle East, Europe</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============================= MISSION / VISION ============================= -->
+    <section id="mission" class="bg-navy-50 py-20 lg:py-28">
+      <div class="mx-auto grid max-w-content gap-8 px-6 lg:grid-cols-2">
+        <article class="rounded-lg bg-white p-10 shadow-card ring-1 ring-slate-100">
+          <div class="mb-5 flex h-12 w-12 items-center justify-center rounded bg-navy text-gold">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg>
+          </div>
+          <h2 class="text-2xl font-semibold text-navy">Our Mission</h2>
+          <div class="rule-gold my-5"></div>
+          <!-- COPY: mission statement -->
+          <p class="text-slate-600">
+            To promote and facilitate international trade, responsible investment and economic cooperation that
+            advance sustainable and inclusive development for the people of South Sudan.
+          </p>
+        </article>
+
+        <article class="rounded-lg bg-white p-10 shadow-card ring-1 ring-slate-100">
+          <div class="mb-5 flex h-12 w-12 items-center justify-center rounded bg-navy text-gold">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h2 class="text-2xl font-semibold text-navy">Our Vision</h2>
+          <div class="rule-gold my-5"></div>
+          <!-- COPY: vision statement -->
+          <p class="text-slate-600">
+            A connected, competitive and prosperous South Sudan recognised globally as a trusted and attractive
+            destination for trade and investment.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================= VALUES ============================= -->
+    <section id="values" class="bg-white py-20 lg:py-28">
+      <div class="mx-auto max-w-content px-6">
+        <div class="max-w-2xl">
+          <span class="text-xs font-semibold uppercase tracking-[0.3em] text-gold-dark">What guides us</span>
+          <h2 class="mt-3 text-3xl font-semibold text-navy sm:text-4xl">Our values</h2>
+          <div class="rule-gold my-6"></div>
+        </div>
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <!-- COPY: repeat for each value -->
+          <article class="rounded-lg border border-slate-200 p-7">
+            <h3 class="text-lg font-semibold text-navy">Integrity</h3>
+            <p class="mt-2 text-sm text-slate-600">We act with honesty, ethics and accountability in every engagement.</p>
+          </article>
+          <article class="rounded-lg border border-slate-200 p-7">
+            <h3 class="text-lg font-semibold text-navy">Independence</h3>
+            <p class="mt-2 text-sm text-slate-600">We remain neutral and objective, serving the broader public interest.</p>
+          </article>
+          <article class="rounded-lg border border-slate-200 p-7">
+            <h3 class="text-lg font-semibold text-navy">Collaboration</h3>
+            <p class="mt-2 text-sm text-slate-600">We build partnerships that create shared and lasting value.</p>
+          </article>
+          <article class="rounded-lg border border-slate-200 p-7">
+            <h3 class="text-lg font-semibold text-navy">Excellence</h3>
+            <p class="mt-2 text-sm text-slate-600">We deliver professional, evidence-based and high-quality services.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= MANDATE ============================= -->
+    <section id="mandate" class="bg-navy py-20 text-white lg:py-28">
+      <div class="mx-auto grid max-w-content gap-14 px-6 lg:grid-cols-2">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-[0.3em] text-gold">Our mandate</span>
+          <h2 class="mt-3 text-3xl font-semibold sm:text-4xl">What we are mandated to do</h2>
+          <div class="rule-gold my-6"></div>
+          <!-- COPY: mandate bullets -->
+          <ul class="space-y-4 text-mist">
+            <li class="flex gap-3"><span class="text-gold">&#9670;</span> Promote South Sudan as a trade and investment destination.</li>
+            <li class="flex gap-3"><span class="text-gold">&#9670;</span> Facilitate linkages between local and international enterprises.</li>
+            <li class="flex gap-3"><span class="text-gold">&#9670;</span> Advise on policy and the ease of doing business.</li>
+            <li class="flex gap-3"><span class="text-gold">&#9670;</span> Represent members in international economic forums.</li>
+            <li class="flex gap-3"><span class="text-gold">&#9670;</span> Build capacity within public and private institutions.</li>
+          </ul>
+        </div>
+        <div>
+          <img src="assets/images/2.jpeg" alt="SSIETIB board meeting and professional business networking" class="h-full w-full rounded-lg object-cover shadow-lg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= LEADERSHIP =============================
+    <section id="leadership" class="bg-white py-20 lg:py-28">
+      <div class="mx-auto max-w-content px-6">
+        <div class="max-w-2xl">
+          <span class="text-xs font-semibold uppercase tracking-[0.3em] text-gold-dark">People</span>
+          <h2 class="mt-3 text-3xl font-semibold text-navy sm:text-4xl">Leadership &amp; team</h2>
+          <div class="rule-gold my-6"></div>
+          <p class="text-slate-600">Our work is led by a multidisciplinary team of trade, investment and development professionals.</p>
+        </div>
+        <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          COPY: repeat for each team member
+          <article class="text-center">
+            <img src="assets/images/15.jpeg" alt="" class="mx-auto h-40 w-40 rounded-full object-cover ring-4 ring-navy-50" />
+            <h3 class="mt-5 text-lg font-semibold text-navy">Full Name</h3>
+            <p class="text-sm text-gold-dark">Director General</p>
+            <p class="mt-2 text-sm text-slate-600">Short biography of the team member.</p>
+          </article>
+          <article class="text-center">
+            <img src="assets/images/13.jpeg" alt="" class="mx-auto h-40 w-40 rounded-full object-cover ring-4 ring-navy-50" />
+            <h3 class="mt-5 text-lg font-semibold text-navy">Full Name</h3>
+            <p class="text-sm text-gold-dark">Head of Investment</p>
+            <p class="mt-2 text-sm text-slate-600">Short biography of the team member.</p>
+          </article>
+          <article class="text-center">
+            <img src="assets/images/14.jpeg" alt="" class="mx-auto h-40 w-40 rounded-full object-cover ring-4 ring-navy-50" />
+            <h3 class="mt-5 text-lg font-semibold text-navy">Full Name</h3>
+            <p class="text-sm text-gold-dark">Head of Trade</p>
+            <p class="mt-2 text-sm text-slate-600">Short biography of the team member.</p>
+          </article>
+          <article class="text-center">
+            <img src="assets/images/5.jpeg" alt="" class="mx-auto h-40 w-40 rounded-full object-cover ring-4 ring-navy-50" />
+            <h3 class="mt-5 text-lg font-semibold text-navy">Full Name</h3>
+            <p class="text-sm text-gold-dark">Head of Partnerships</p>
+            <p class="mt-2 text-sm text-slate-600">Short biography of the team member.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    -->
+
+    <!-- ============================= CTA ============================= -->
+    <section id="cta" class="bg-gold">
+      <div class="mx-auto flex max-w-content flex-col items-center justify-between gap-6 px-6 py-14 text-center lg:flex-row lg:text-left">
+        <div>
+          <h2 class="text-2xl font-semibold text-navy sm:text-3xl">Partner with SSIETIB</h2>
+          <p class="mt-2 text-navy/80">Let&rsquo;s build the next chapter of South Sudan&rsquo;s economic story together.</p>
+        </div>
+        <a href="contact.html" class="rounded bg-navy px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-navy-700">Get in touch</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================= FOOTER ============================= -->
+    <footer class="bg-charcoal text-slate-300">
+    <!-- Legal disclaimer band (prominent) -->
+    <div class="border-b border-white/10 bg-charcoal-dark">
+      <div class="mx-auto max-w-content px-6 py-6">
+        <p class="text-center text-xs leading-relaxed">
+          <strong class="font-semibold text-white">Disclaimer:</strong>
+          The South Sudan International Economic, Trade and Investment Bureau (SS-IETIB) is an independent, private,
+          non-governmental and non-profit organization. It is not a government agency, is not affiliated with any
+          government or state body, and does not represent any government. Nothing on this website constitutes legal,
+          financial or investment advice.
+        </p>
+      </div>
+    </div>
+
+    <div class="mx-auto grid max-w-content gap-10 px-6 py-16 md:grid-cols-2 lg:grid-cols-4">
+      <div>
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/images/logo.jpeg" alt="SSIETIB emblem" class="h-11 w-11 rounded object-cover ring-1 ring-gold/40" />
+          <span class="leading-tight">
+            <span class="block text-base font-semibold text-white">SSIETIB</span>
+            <span class="block text-[10px] uppercase tracking-[0.2em] text-gold">Economic &middot; Trade &middot; Investment</span>
+          </span>
+        </a>
+        <p class="mt-5 text-sm">
+          The South Sudan International Economic, Trade and Investment Bureau &mdash; an independent, private,
+          non-governmental and non-profit organization promoting trade and investment.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-sm font-semibold uppercase tracking-widest text-white">Explore</h2>
+        <ul class="mt-5 space-y-3 text-sm">
+          <li><a href="about.html" class="hover:text-gold">About Us</a></li>
+          <li><a href="trade-exports.html" class="hover:text-gold">Trade &amp; Exports</a></li>
+          <li><a href="investment.html" class="hover:text-gold">Invest in South Sudan</a></li>
+          <li><a href="network.html" class="hover:text-gold">Business Network</a></li>
+          <li><a href="international-cooperation.html" class="hover:text-gold">International Cooperation</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-sm font-semibold uppercase tracking-widest text-white">Resources</h2>
+        <ul class="mt-5 space-y-3 text-sm">
+          <li><a href="events.html" class="hover:text-gold">Events &amp; Trade Missions</a></li>
+          <li><a href="research-publications.html" class="hover:text-gold">Research &amp; Publications</a></li>
+          <li><a href="news.html" class="hover:text-gold">News &amp; Updates</a></li>
+          <li><a href="#" class="hover:text-gold">Careers</a></li>
+          <li><a href="#" class="hover:text-gold">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-sm font-semibold uppercase tracking-widest text-white">Contact</h2>
+        <ul class="mt-5 space-y-3 text-sm">
+          <li>Juba, Central Equatoria<br />Republic of South Sudan</li>
+          <li><a href="mailto:info@ssietib.org" class="hover:text-gold">info@ssietib.org</a></li>
+          <li><a href="tel:+211927088875" class="hover:text-gold">+211 927 088 875</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-white/10 bg-charcoal-dark">
+      <div class="mx-auto flex max-w-content flex-col items-center justify-between gap-3 px-6 py-6 text-xs md:flex-row">
+        <p>&copy; <span data-year>2026</span> SSIETIB. All rights reserved.</p>
+        <p>An independent, private, non-governmental and non-profit organization.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Network | SSIETIB</title>
+  <meta name="description" content="The SSIETIB global network: regional desks, partner organisations and representatives connecting South Sudan with international markets." />
+  <link rel="icon" href="assets/images/logo.jpeg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/js/tailwind.config.js"></script>
+  <link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body class="bg-white font-sans text-ink antialiased">
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ============================= HEADER / GLOBAL NAV ============================= -->
+    <header data-header class="sticky top-0 z-50 bg-navy/95 text-white backdrop-blur border-b border-white/10">
+    <!-- Utility bar -->
+    <div class="hidden border-b border-white/10 bg-charcoal/95 lg:block">
+      <div class="mx-auto flex h-9 max-w-content items-center justify-between px-6 text-xs text-mist">
+        <p>An independent, private, non-governmental and non-profit organization.</p>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-gold" href="mailto:info@ssietib.org">info@ssietib.org</a>
+          <span class="text-white/30" aria-hidden="true">|</span>
+          <a class="hover:text-gold" href="tel:+211927088875">+211 927 088 875</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mx-auto max-w-content px-6">
+      <div class="flex h-16 items-center gap-4 lg:h-20">
+        <!-- Brand -->
+        <a href="index.html" class="flex min-w-0 max-w-[200px] flex-none items-center gap-3 lg:w-1/4">
+          <img src="assets/images/logo.jpeg" alt="SSIETIB emblem" class="h-11 w-11 flex-none rounded object-cover ring-1 ring-gold/40" />
+          <span class="min-w-0 leading-tight">
+            <span class="block text-base font-semibold tracking-wide">SSIETIB</span>
+            <span class="mt-0.5 hidden text-xs leading-snug text-gray-400 sm:line-clamp-2">Connecting South Sudan to Global Trade, Investment and Economic Partnerships.</span>
+          </span>
+        </a>
+
+        <!-- Primary navigation -->
+        <nav class="hidden min-w-0 flex-1 items-center justify-end gap-4 xl:flex" aria-label="Primary">
+          <a data-nav-link href="index.html" class="whitespace-nowrap border-b-2 border-transparent px-1 py-2 text-xs font-medium text-slate-200 transition-colors hover:border-gold hover:text-gold">Home</a>
+          <a data-nav-link href="about.html" class="whitespace-nowrap border-b-2 border-transparent px-1 py-2 text-xs font-medium text-slate-200 transition-colors hover:border-gold hover:text-gold">About Us</a>
+          <a data-nav-link href="trade-exports.html" class="whitespace-nowrap border-b-2 border-transparent px-1 py-2 text-xs font-medium text-slate-200 transition-colors hover:border-gold hover:text-gold">Trade &amp; Exports</a>
+          <a data-nav-link href="investment.html" class="whitespace-nowrap border-b-2 border-transparent px-1 py-2 text-xs font-medium text-slate-200 transition-colors hover:border-gold hover:text-gold">Invest in South Sudan</a>
+          <a data-nav-link href="network.html" class="whitespace-nowrap border-b-2 border-transparent px-1 py-2 text-xs font-medium text-slate-200 transition-colors hover:border-gold hover:text-gold">Business Network</a>
+          <a data-nav-link href="international-cooperation.html" class="whitespace-nowrap border-b-2 border-transparent px-1 py-2 text-xs font-medium text-slate-200 transition-colors hover:border-gold hover:text-gold">International Cooperation</a>
+          <!-- More dropdown -->
+          <div data-nav-dropdown class="relative">
+            <button type="button" data-dropdown-toggle aria-haspopup="true" aria-expanded="false" class="flex items-center gap-1 whitespace-nowrap border-b-2 border-transparent px-1 py-2 text-xs font-medium text-slate-200 transition-colors hover:border-gold hover:text-gold">
+              More
+              <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6" /></svg>
+            </button>
+            <div data-nav-dropdown-menu class="absolute right-0 top-full z-50 w-64 rounded-md border border-charcoal/10 bg-white p-2 shadow-xl">
+              <a data-nav-link href="events.html" class="block whitespace-nowrap rounded px-3 py-2 text-sm text-charcoal hover:bg-navy-50 hover:text-navy">Events &amp; Trade Missions</a>
+              <a data-nav-link href="research-publications.html" class="block whitespace-nowrap rounded px-3 py-2 text-sm text-charcoal hover:bg-navy-50 hover:text-navy">Research &amp; Publications</a>
+              <a data-nav-link href="news.html" class="block whitespace-nowrap rounded px-3 py-2 text-sm text-charcoal hover:bg-navy-50 hover:text-navy">News &amp; Updates</a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Language selector + CTA -->
+        <div class="flex flex-none items-center gap-3">
+          <div class="lang-switch hidden items-center overflow-hidden rounded border border-white/25 sm:flex" role="group" aria-label="Select language">
+            <a href="index.html" hreflang="en" lang="en" aria-current="true" class="whitespace-nowrap bg-gold px-2 py-1.5 text-xs font-semibold text-navy">English</a>
+            <a href="zh/index.html" hreflang="zh-Hans" lang="zh-Hans" class="whitespace-nowrap px-2 py-1.5 text-xs font-semibold text-white hover:text-gold">&#20013;&#25991;</a>
+          </div>
+          <a href="contact.html" class="hidden whitespace-nowrap rounded bg-gold px-4 py-2.5 text-sm font-semibold text-navy transition hover:bg-gold-dark lg:inline-block">Contact Us</a>
+          <button data-nav-toggle type="button" aria-expanded="false" aria-label="Toggle navigation" aria-controls="primary-menu-mobile"
+            class="inline-flex items-center justify-center rounded p-2 text-white ring-1 ring-white/20 xl:hidden">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" /></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div data-nav-menu id="primary-menu-mobile" class="xl:hidden">
+      <nav class="mx-auto max-w-content space-y-1 px-6 pb-6" aria-label="Mobile">
+        <a data-nav-link href="index.html" class="block whitespace-nowrap rounded px-3 py-2.5 text-sm text-slate-200 hover:bg-white/5 hover:text-gold">Home</a>
+        <a data-nav-link href="about.html" class="block whitespace-nowrap rounded px-3 py-2.5 text-sm text-slate-200 hover:bg-white/5 hover:text-gold">About Us</a>
+        <a data-nav-link href="trade-exports.html" class="block whitespace-nowrap rounded px-3 py-2.5 text-sm text-slate-200 hover:bg-white/5 hover:text-gold">Trade &amp; Exports</a>
+        <a data-nav-link href="investment.html" class="block whitespace-nowrap rounded px-3 py-2.5 text-sm text-slate-200 hover:bg-white/5 hover:text-gold">Invest in South Sudan</a>
+        <a data-nav-link href="network.html" class="block whitespace-nowrap rounded px-3 py-2.5 text-sm text-slate-200 hover:bg-white/5 hover:text-gold">Business Network</a>
+        <a data-nav-link href="international-cooperation.html" class="block whitespace-nowrap rounded px-3 py-2.5 text-sm text-slate-200 hover:bg-white/5 hover:text-gold">International Cooperation</a>
+        <p class="px-3 pt-3 text-[11px] font-semibold uppercase tracking-widest text-mist">More</p>
+        <a data-nav-link href="events.html" class="block whitespace-nowrap rounded px-3 py-2.5 text-sm text-slate-200 hover:bg-white/5 hover:text-gold">Events &amp; Trade Missions</a>
+        <a data-nav-link href="research-publications.html" class="block whitespace-nowrap rounded px-3 py-2.5 text-sm text-slate-200 hover:bg-white/5 hover:text-gold">Research &amp; Publications</a>
+        <a data-nav-link href="news.html" class="block whitespace-nowrap rounded px-3 py-2.5 text-sm text-slate-200 hover:bg-white/5 hover:text-gold">News &amp; Updates</a>
+        <div class="lang-switch mt-3 flex items-center overflow-hidden rounded border border-white/25" role="group" aria-label="Select language">
+          <a href="index.html" hreflang="en" lang="en" aria-current="true" class="flex-1 bg-gold px-3 py-2 text-center text-xs font-semibold text-navy">English</a>
+          <a href="zh/index.html" hreflang="zh-Hans" lang="zh-Hans" class="flex-1 px-3 py-2 text-center text-xs font-semibold text-white hover:text-gold">&#20013;&#25991;</a>
+        </div>
+        <a href="contact.html" class="mt-2 block rounded bg-gold px-3 py-2.5 text-center text-sm font-semibold text-navy">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="main">
+    <!-- ============================= PAGE HERO ============================= -->
+    <section id="page-hero" class="relative isolate overflow-hidden bg-navy text-white">
+      <img src="assets/images/13.jpeg" alt="" class="absolute inset-0 h-full w-full object-cover opacity-20" />
+      <div class="absolute inset-0 bg-gradient-to-r from-navy via-navy/95 to-navy/60"></div>
+      <div class="relative mx-auto max-w-content px-6 py-20 lg:py-28">
+        <nav class="mb-4 text-xs text-mist" aria-label="Breadcrumb">
+          <a href="index.html" class="hover:text-gold">Home</a>
+          <span class="mx-2 text-white/30">/</span>
+          <span class="text-gold">Network</span>
+        </nav>
+        <h1 class="max-w-3xl text-4xl font-semibold leading-tight sm:text-5xl">Our Global Network</h1>
+        <p class="mt-5 max-w-2xl text-lg text-mist">
+          Regional desks, representatives and partners that extend South Sudan&rsquo;s economic reach across the world.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================= NETWORK OVERVIEW ============================= -->
+    <section id="overview" class="bg-white py-20 lg:py-28">
+      <div class="mx-auto grid max-w-content items-start gap-14 px-6 lg:grid-cols-2">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-[0.3em] text-gold-dark">Connected</span>
+          <h2 class="mt-3 text-3xl font-semibold text-navy sm:text-4xl">Locally grounded, globally connected</h2>
+          <div class="rule-gold my-6"></div>
+          <!-- COPY: network overview -->
+          <p class="text-slate-600">
+            SSIETIB works through a network of regional desks, in-country representatives and partner organisations.
+            This structure allows us to respond quickly to enquiries, provide on-the-ground support and connect the
+            right people across borders.
+          </p>
+        </div>
+        <div class="grid gap-6 sm:grid-cols-2">
+          <div class="rounded-lg border border-slate-200 p-7">
+            <p class="text-3xl font-semibold text-navy">20+</p>
+            <p class="mt-1 text-sm text-slate-600">Countries reached</p>
+          </div>
+          <div class="rounded-lg border border-slate-200 p-7">
+            <p class="text-3xl font-semibold text-navy">5</p>
+            <p class="mt-1 text-sm text-slate-600">Regional desks</p>
+          </div>
+          <div class="rounded-lg border border-slate-200 p-7">
+            <p class="text-3xl font-semibold text-navy">100+</p>
+            <p class="mt-1 text-sm text-slate-600">Partner organisations</p>
+          </div>
+          <div class="rounded-lg border border-slate-200 p-7">
+            <p class="text-3xl font-semibold text-navy">1</p>
+            <p class="mt-1 text-sm text-slate-600">Head office in Juba</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= REGIONS ============================= -->
+    <section id="regions" class="bg-navy-50 py-20 lg:py-28">
+      <div class="mx-auto max-w-content px-6">
+        <div class="max-w-2xl">
+          <span class="text-xs font-semibold uppercase tracking-[0.3em] text-gold-dark">Where we work</span>
+          <h2 class="mt-3 text-3xl font-semibold text-navy sm:text-4xl">Regional desks</h2>
+          <div class="rule-gold my-6"></div>
+        </div>
+        <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <!-- COPY: repeat for each region -->
+          <article class="rounded-lg bg-white p-8 shadow-card ring-1 ring-slate-100">
+            <h3 class="text-lg font-semibold text-navy">East &amp; Horn of Africa</h3>
+            <p class="mt-2 text-sm text-slate-600">Kenya, Uganda, Ethiopia, Djibouti, Eritrea and Somalia.</p>
+          </article>
+          <article class="rounded-lg bg-white p-8 shadow-card ring-1 ring-slate-100">
+            <h3 class="text-lg font-semibold text-navy">North Africa &amp; Middle East</h3>
+            <p class="mt-2 text-sm text-slate-600">Egypt, Sudan, the Gulf states and the wider region.</p>
+          </article>
+          <article class="rounded-lg bg-white p-8 shadow-card ring-1 ring-slate-100">
+            <h3 class="text-lg font-semibold text-navy">Asia &amp; China</h3>
+            <p class="mt-2 text-sm text-slate-600">China, India, Southeast Asia and the Pacific.</p>
+          </article>
+          <article class="rounded-lg bg-white p-8 shadow-card ring-1 ring-slate-100">
+            <h3 class="text-lg font-semibold text-navy">Europe</h3>
+            <p class="mt-2 text-sm text-slate-600">European Union, United Kingdom and neighbouring markets.</p>
+          </article>
+          <article class="rounded-lg bg-white p-8 shadow-card ring-1 ring-slate-100">
+            <h3 class="text-lg font-semibold text-navy">Americas</h3>
+            <p class="mt-2 text-sm text-slate-600">North and South America, with a focus on finance and commodities.</p>
+          </article>
+          <article class="rounded-lg bg-white p-8 shadow-card ring-1 ring-slate-100">
+            <h3 class="text-lg font-semibold text-navy">Southern Africa</h3>
+            <p class="mt-2 text-sm text-slate-600">SADC markets and regional value chains.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= WORLD MAP ============================= -->
+    <section id="map" class="bg-navy py-20 text-white lg:py-24">
+      <div class="mx-auto max-w-content px-6">
+        <div class="max-w-2xl">
+          <span class="text-xs font-semibold uppercase tracking-[0.3em] text-gold">Presence</span>
+          <h2 class="mt-3 text-3xl font-semibold sm:text-4xl">Our footprint</h2>
+          <div class="rule-gold my-6"></div>
+        </div>
+
+        <div class="mt-10 overflow-hidden rounded-lg border border-white/10 bg-white/[0.03] p-4 shadow-md sm:p-6">
+          <svg viewBox="0 0 1000 500" class="h-auto w-full" role="img" aria-label="World map showing SSIETIB presence in Juba, South Sudan and Shenzhen, China, linked by a bilateral trade corridor">
+            <!-- Landmasses -->
+            <g class="text-white/15" fill="currentColor">
+              <path d="M33 69 L111 56 L167 50 L236 50 L278 56 L333 83 L347 111 L319 125 L292 153 L278 181 L250 194 L228 206 L208 194 L181 167 L153 139 L153 111 L125 89 L83 83 L42 97 Z" />
+              <path d="M375 19 L444 28 L450 56 L417 83 L361 83 L347 56 Z" />
+              <path d="M278 222 L306 217 L333 228 L361 250 L403 264 L403 306 L375 333 L347 356 L319 403 L306 394 L300 361 L292 306 L283 264 L272 244 Z" />
+              <path d="M472 150 L472 128 L500 108 L514 89 L528 75 L569 53 L611 61 L667 56 L750 39 L889 50 L972 67 L1000 83 L944 97 L903 125 L889 153 L839 161 L833 189 L800 200 L792 222 L778 242 L764 208 L744 189 L722 228 L700 194 L672 181 L658 189 L639 169 L633 167 L625 139 L611 133 L597 150 L578 139 L556 133 L542 144 L528 128 L514 131 L500 131 L486 150 Z" />
+              <path d="M452 208 L453 192 L472 167 L500 150 L531 147 L569 161 L597 164 L619 217 L642 217 L617 253 L611 292 L597 317 L569 344 L550 344 L533 300 L525 239 L514 236 L478 239 L461 222 Z" />
+              <path d="M814 281 L861 283 L903 292 L925 319 L917 353 L889 356 L861 339 L819 347 L811 311 Z" />
+            </g>
+
+            <!-- Bilateral trade corridor -->
+            <path d="M588 236 Q702 110 817 187" fill="none" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-dasharray="7 7" opacity="0.85" />
+            <text x="702" y="140" text-anchor="middle" fill="#D4AF37" opacity="0.7" font-size="11" letter-spacing="1.5">TRADE &amp; INVESTMENT CORRIDOR</text>
+
+            <!-- Juba, South Sudan -->
+            <circle cx="588" cy="236" r="13" fill="none" stroke="#D4AF37" opacity="0.35" />
+            <circle cx="588" cy="236" r="6" class="fill-gold" fill="#D4AF37" stroke="#0A192F" stroke-width="1.5" />
+            <text x="600" y="264" fill="#ffffff" font-size="13" font-weight="600" stroke="#0A192F" stroke-width="3" paint-order="stroke">Juba, South Sudan</text>
+
+            <!-- Shenzhen, China -->
+            <circle cx="817" cy="187" r="13" fill="none" stroke="#D4AF37" opacity="0.35" />
+            <circle cx="817" cy="187" r="6" class="fill-gold" fill="#D4AF37" stroke="#0A192F" stroke-width="1.5" />
+            <text x="829" y="178" fill="#ffffff" font-size="13" font-weight="600" stroke="#0A192F" stroke-width="3" paint-order="stroke">Shenzhen, China</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= OFFICES ============================= -->
+    <section id="offices" class="bg-white py-20 lg:py-28">
+      <div class="mx-auto max-w-content px-6">
+        <div class="max-w-2xl">
+          <span class="text-xs font-semibold uppercase tracking-[0.3em] text-gold-dark">Find us</span>
+          <h2 class="mt-3 text-3xl font-semibold text-navy sm:text-4xl">Offices &amp; representatives</h2>
+          <div class="rule-gold my-6"></div>
+        </div>
+        <div class="mt-12 grid gap-8 md:grid-cols-3">
+          <!-- COPY: repeat for each office -->
+          <article class="rounded-lg border border-slate-200 p-7">
+            <h3 class="text-lg font-semibold text-navy">Head Office</h3>
+            <p class="mt-2 text-sm text-slate-600">Juba, Central Equatoria<br />Republic of South Sudan</p>
+            <p class="mt-3 text-sm"><a href="mailto:info@ssietib.org" class="font-semibold text-gold-dark hover:text-navy">info@ssietib.org</a></p>
+          </article>
+          <article class="rounded-lg border border-slate-200 p-7">
+            <h3 class="text-lg font-semibold text-navy">Regional Desk</h3>
+            <p class="mt-2 text-sm text-slate-600">Shenzhen, China<br />Regional coordination office</p>
+            <p class="mt-3 text-sm"><a href="mailto:regional@ssietib.org" class="font-semibold text-gold-dark hover:text-navy">regional@ssietib.org</a></p>
+          </article>
+          <article class="rounded-lg border border-slate-200 p-7">
+            <h3 class="text-lg font-semibold text-navy">Representative Office</h3>
+            <p class="mt-2 text-sm text-slate-600">Beijing, China<br />Liaison and partnerships</p>
+            <p class="mt-3 text-sm"><a href="mailto:office@ssietib.org" class="font-semibold text-gold-dark hover:text-navy">office@ssietib.org</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= MEMBERSHIP & PARTNERSHIPS ============================= -->
+    <section id="membership" class="bg-navy-50 py-20 lg:py-24">
+      <div class="mx-auto grid max-w-content items-center gap-12 px-6 lg:grid-cols-2">
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-[0.3em] text-gold-dark">Membership</p>
+          <h2 class="mt-3 text-3xl font-semibold text-navy sm:text-4xl">Join the SSIETIB network</h2>
+          <div class="rule-gold my-6"></div>
+          <!-- COPY: membership benefits summary -->
+          <p class="text-slate-600">
+            Membership connects your organisation to curated opportunities, market intelligence and a trusted
+            network of partners across South Sudan and beyond.
+          </p>
+          <a href="partnerships.html" class="mt-8 inline-flex rounded bg-navy px-6 py-3 text-sm font-semibold text-white transition hover:bg-navy-700">Membership &amp; partnerships</a>
+        </div>
+        <div class="grid gap-6 sm:grid-cols-2">
+          <div class="rounded-lg border border-slate-200 bg-white p-7">
+            <h3 class="text-lg font-semibold text-navy">Associate</h3>
+            <p class="mt-2 text-sm text-slate-600">Network access and market updates.</p>
+          </div>
+          <div class="rounded-lg border border-slate-200 bg-white p-7">
+            <h3 class="text-lg font-semibold text-navy">Corporate</h3>
+            <p class="mt-2 text-sm text-slate-600">Facilitation and matchmaking support.</p>
+          </div>
+          <div class="rounded-lg border border-slate-200 bg-white p-7">
+            <h3 class="text-lg font-semibold text-navy">Strategic</h3>
+            <p class="mt-2 text-sm text-slate-600">Joint programmes and co-branded initiatives.</p>
+          </div>
+          <div class="rounded-lg border border-slate-200 bg-white p-7">
+            <h3 class="text-lg font-semibold text-navy">Institutional</h3>
+            <p class="mt-2 text-sm text-slate-600">Government and development partners.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= CTA ============================= -->
+    <section id="cta" class="bg-gold">
+      <div class="mx-auto flex max-w-content flex-col items-center justify-between gap-6 px-6 py-14 text-center lg:flex-row lg:text-left">
+        <div>
+          <h2 class="text-2xl font-semibold text-navy sm:text-3xl">Join our network</h2>
+          <p class="mt-2 text-navy/80">Representatives and partners are welcome to connect with us.</p>
+        </div>
+        <a href="contact.html" class="rounded bg-navy px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-navy-700">Contact us</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================= FOOTER ============================= -->
+    <footer class="bg-charcoal text-slate-300">
+    <!-- Legal disclaimer band (prominent) -->
+    <div class="border-b border-white/10 bg-charcoal-dark">
+      <div class="mx-auto max-w-content px-6 py-6">
+        <p class="text-center text-xs leading-relaxed">
+          <strong class="font-semibold text-white">Disclaimer:</strong>
+          The South Sudan International Economic, Trade and Investment Bureau (SS-IETIB) is an independent, private,
+          non-governmental and non-profit organization. It is not a government agency, is not affiliated with any
+          government or state body, and does not represent any government. Nothing on this website constitutes legal,
+          financial or investment advice.
+        </p>
+      </div>
+    </div>
+
+    <div class="mx-auto grid max-w-content gap-10 px-6 py-16 md:grid-cols-2 lg:grid-cols-4">
+      <div>
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/images/logo.jpeg" alt="SSIETIB emblem" class="h-11 w-11 rounded object-cover ring-1 ring-gold/40" />
+          <span class="leading-tight">
+            <span class="block text-base font-semibold text-white">SSIETIB</span>
+            <span class="block text-[10px] uppercase tracking-[0.2em] text-gold">Economic &middot; Trade &middot; Investment</span>
+          </span>
+        </a>
+        <p class="mt-5 text-sm">
+          The South Sudan International Economic, Trade and Investment Bureau &mdash; an independent, private,
+          non-governmental and non-profit organization promoting trade and investment.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-sm font-semibold uppercase tracking-widest text-white">Explore</h2>
+        <ul class="mt-5 space-y-3 text-sm">
+          <li><a href="about.html" class="hover:text-gold">About Us</a></li>
+          <li><a href="trade-exports.html" class="hover:text-gold">Trade &amp; Exports</a></li>
+          <li><a href="investment.html" class="hover:text-gold">Invest in South Sudan</a></li>
+          <li><a href="network.html" class="hover:text-gold">Business Network</a></li>
+          <li><a href="international-cooperation.html" class="hover:text-gold">International Cooperation</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-sm font-semibold uppercase tracking-widest text-white">Resources</h2>
+        <ul class="mt-5 space-y-3 text-sm">
+          <li><a href="events.html" class="hover:text-gold">Events &amp; Trade Missions</a></li>
+          <li><a href="research-publications.html" class="hover:text-gold">Research &amp; Publications</a></li>
+          <li><a href="news.html" class="hover:text-gold">News &amp; Updates</a></li>
+          <li><a href="#" class="hover:text-gold">Careers</a></li>
+          <li><a href="#" class="hover:text-gold">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-sm font-semibold uppercase tracking-widest text-white">Contact</h2>
+        <ul class="mt-5 space-y-3 text-sm">
+          <li>Juba, Central Equatoria<br />Republic of South Sudan</li>
+          <li><a href="mailto:info@ssietib.org" class="hover:text-gold">info@ssietib.org</a></li>
+          <li><a href="tel:+211927088875" class="hover:text-gold">+211 927 088 875</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-white/10 bg-charcoal-dark">
+      <div class="mx-auto flex max-w-content flex-col items-center justify-between gap-3 px-6 py-6 text-xs md:flex-row">
+        <p>&copy; <span data-year>2026</span> SSIETIB. All rights reserved.</p>
+        <p>An independent, private, non-governmental and non-profit organization.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

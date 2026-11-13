@@ -1,0 +1,123 @@
+/*
+ * SSIETIB site styles
+ * States that are clearer outside of utility classes:
+ *   - sticky header elevation
+ *   - mobile navigation open/close
+ *   - active navigation highlighting (set from JS via [aria-current="page"] / .is-active)
+ *   - language selector
+ *   - focus visibility (WCAG 2.2 AA)
+ */
+
+[data-header] {
+  transition: background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+[data-header].is-scrolled {
+  box-shadow: 0 8px 24px -16px rgba(10, 25, 47, 0.5);
+}
+
+/* Skip link for keyboard users */
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 100;
+  border-radius: 0.25rem;
+  background: #d4af37;
+  color: #0a192f;
+  padding: 0.625rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: top 0.2s ease;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* Mobile navigation */
+[data-nav-menu] {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+[data-nav-menu].open {
+  max-height: 52rem;
+  overflow-y: auto;
+}
+
+/* Active primary navigation link (desktop) */
+[data-nav-link].is-active {
+  color: #d4af37;
+  border-bottom-color: #d4af37;
+}
+
+/* Active navigation link (mobile + dropdown) */
+[data-nav-menu] [data-nav-link].is-active,
+[data-nav-dropdown] [data-nav-link].is-active {
+  color: #8a6a1f;
+  font-weight: 600;
+}
+[data-nav-menu] [data-nav-link].is-active {
+  color: #d4af37;
+}
+
+/* Thin gold rule used under section headings */
+.rule-gold {
+  width: 3.5rem;
+  height: 0.25rem;
+  background-color: #d4af37;
+  border-radius: 9999px;
+}
+
+/* Accessible focus ring consistent across the site */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid #d4af37;
+  outline-offset: 2px;
+  border-radius: 0.125rem;
+}
+
+/* Language selector */
+.lang-switch a[aria-current="true"] {
+  cursor: default;
+}
+
+/* Desktop dropdown menu (open on hover, focus-within, or click) */
+[data-nav-dropdown-menu] {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(0.25rem);
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s ease;
+}
+
+[data-nav-dropdown]:hover [data-nav-dropdown-menu],
+[data-nav-dropdown]:focus-within [data-nav-dropdown-menu],
+[data-nav-dropdown].open [data-nav-dropdown-menu] {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  [data-header],
+  [data-nav-menu],
+  footer {
+    display: none !important;
+  }
+}

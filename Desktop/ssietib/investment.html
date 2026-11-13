@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Investment | SSIETIB</title>
+  <meta name="description" content="Discover investment opportunities in South Sudan: priority sectors, market advantages, incentives and how SSIETIB helps investors." />
+  <link rel="icon" href="assets/images/logo.jpeg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/js/tailwind.config.js"></script>
+  <link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body class="bg-white font-sans text-ink antialiased">
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ============================= HEADER / GLOBAL NAV ============================= -->
+    <header data-header class="sticky top-0 z-50 bg-navy/95 text-white backdrop-blur border-b border-white/10">
+    <!-- Utility bar -->
+    <div class="hidden border-b border-white/10 bg-charcoal/95 lg:block">
+      <div class="mx-auto flex h-9 max-w-content items-center justify-between px-6 text-xs text-mist">
+        <p>An independent, private, non-governmental and non-profit organization.</p>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-gold" href="mailto:info@ssietib.org">info@ssietib.org</a>
+          <span class="text-white/30" aria-hidden="true">|</span>
+          <a class="hover:text-gold" href="tel:+211927088875">+211 927 088 875</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mx-auto max-w-content px-6">
+      <div class="flex h-16 items-center gap-4 lg:h-20">
+        <!-- Brand -->
+        <a href="index.html" class="flex min-w-0 max-w-[200px] flex-none items-center gap-3 lg:w-1/4">
+          <img src="assets/images/logo.jpeg" alt="SSIETIB emblem" class="h-11 w-11 flex-none rounded object-cover ring-1 ring-gold/40" />
+          <span class="min-w-0 leading-tight">
+            <span class="block text-base font-semibold tracking-wide">SSIETIB</span>
+            <span class="mt-0.5 hidden text-xs leading-snug text-gray-400 sm:line-clamp-2">Connecting South Sudan to Global Trade, Investment and Economic Partnerships.</span>
+          </span>
+        </a>
+
+        <!-- Primary navigation -->
+        <nav class="hidden min-w-0 flex-1 items-center justify-end gap-4 xl:flex" aria-label="Primary">
+          <a data-nav-link href="index.html" class="whitespace-nowrap border-b-2 border-transparent px-1 py-2 text-xs font-medium text-slate-200 transition-colors hover:border-gold hover:text-gold">Home</a>
+          <a data-nav-link href="about.html" class="whitespace-nowrap border-b-2 border-transparent px-1 py-2 text-xs font-medium text-slate-200 transition-colors hover:border-gold hover:text-gold">About Us</a>
+          <a data-nav-link href="trade-exports.html" class="whitespace-nowrap border-b-2 border-transparent px-1 py-2 text-xs font-medium text-slate-200 transition-colors hover:border-gold hover:text-gold">Trade &amp; Exports</a>
+          <a data-nav-link href="investment.html" class="whitespace-nowrap border-b-2 border-transparent px-1 py-2 text-xs font-medium text-slate-200 transition-colors hover:border-gold hover:text-gold">Invest in South Sudan</a>
+          <a data-nav-link href="network.html" class="whitespace-nowrap border-b-2 border-transparent px-1 py-2 text-xs font-medium text-slate-200 transition-colors hover:border-gold hover:text-gold">Business Network</a>
+          <a data-nav-link href="international-cooperation.html" class="whitespace-nowrap border-b-2 border-transparent px-1 py-2 text-xs font-medium text-slate-200 transition-colors hover:border-gold hover:text-gold">International Cooperation</a>
+          <!-- More dropdown -->
+          <div data-nav-dropdown class="relative">
+            <button type="button" data-dropdown-toggle aria-haspopup="true" aria-expanded="false" class="flex items-center gap-1 whitespace-nowrap border-b-2 border-transparent px-1 py-2 text-xs font-medium text-slate-200 transition-colors hover:border-gold hover:text-gold">
+              More
+              <svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6" /></svg>
+            </button>
+            <div data-nav-dropdown-menu class="absolute right-0 top-full z-50 w-64 rounded-md border border-charcoal/10 bg-white p-2 shadow-xl">
+              <a data-nav-link href="events.html" class="block whitespace-nowrap rounded px-3 py-2 text-sm text-charcoal hover:bg-navy-50 hover:text-navy">Events &amp; Trade Missions</a>
+              <a data-nav-link href="research-publications.html" class="block whitespace-nowrap rounded px-3 py-2 text-sm text-charcoal hover:bg-navy-50 hover:text-navy">Research &amp; Publications</a>
+              <a data-nav-link href="news.html" class="block whitespace-nowrap rounded px-3 py-2 text-sm text-charcoal hover:bg-navy-50 hover:text-navy">News &amp; Updates</a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Language selector + CTA -->
+        <div class="flex flex-none items-center gap-3">
+          <div class="lang-switch hidden items-center overflow-hidden rounded border border-white/25 sm:flex" role="group" aria-label="Select language">
+            <a href="index.html" hreflang="en" lang="en" aria-current="true" class="whitespace-nowrap bg-gold px-2 py-1.5 text-xs font-semibold text-navy">English</a>
+            <a href="zh/index.html" hreflang="zh-Hans" lang="zh-Hans" class="whitespace-nowrap px-2 py-1.5 text-xs font-semibold text-white hover:text-gold">&#20013;&#25991;</a>
+          </div>
+          <a href="contact.html" class="hidden whitespace-nowrap rounded bg-gold px-4 py-2.5 text-sm font-semibold text-navy transition hover:bg-gold-dark lg:inline-block">Contact Us</a>
+          <button data-nav-toggle type="button" aria-expanded="false" aria-label="Toggle navigation" aria-controls="primary-menu-mobile"
+            class="inline-flex items-center justify-center rounded p-2 text-white ring-1 ring-white/20 xl:hidden">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" /></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div data-nav-menu id="primary-menu-mobile" class="xl:hidden">
+      <nav class="mx-auto max-w-content space-y-1 px-6 pb-6" aria-label="Mobile">
+        <a data-nav-link href="index.html" class="block whitespace-nowrap rounded px-3 py-2.5 text-sm text-slate-200 hover:bg-white/5 hover:text-gold">Home</a>
+        <a data-nav-link href="about.html" class="block whitespace-nowrap rounded px-3 py-2.5 text-sm text-slate-200 hover:bg-white/5 hover:text-gold">About Us</a>
+        <a data-nav-link href="trade-exports.html" class="block whitespace-nowrap rounded px-3 py-2.5 text-sm text-slate-200 hover:bg-white/5 hover:text-gold">Trade &amp; Exports</a>
+        <a data-nav-link href="investment.html" class="block whitespace-nowrap rounded px-3 py-2.5 text-sm text-slate-200 hover:bg-white/5 hover:text-gold">Invest in South Sudan</a>
+        <a data-nav-link href="network.html" class="block whitespace-nowrap rounded px-3 py-2.5 text-sm text-slate-200 hover:bg-white/5 hover:text-gold">Business Network</a>
+        <a data-nav-link href="international-cooperation.html" class="block whitespace-nowrap rounded px-3 py-2.5 text-sm text-slate-200 hover:bg-white/5 hover:text-gold">International Cooperation</a>
+        <p class="px-3 pt-3 text-[11px] font-semibold uppercase tracking-widest text-mist">More</p>
+        <a data-nav-link href="events.html" class="block whitespace-nowrap rounded px-3 py-2.5 text-sm text-slate-200 hover:bg-white/5 hover:text-gold">Events &amp; Trade Missions</a>
+        <a data-nav-link href="research-publications.html" class="block whitespace-nowrap rounded px-3 py-2.5 text-sm text-slate-200 hover:bg-white/5 hover:text-gold">Research &amp; Publications</a>
+        <a data-nav-link href="news.html" class="block whitespace-nowrap rounded px-3 py-2.5 text-sm text-slate-200 hover:bg-white/5 hover:text-gold">News &amp; Updates</a>
+        <div class="lang-switch mt-3 flex items-center overflow-hidden rounded border border-white/25" role="group" aria-label="Select language">
+          <a href="index.html" hreflang="en" lang="en" aria-current="true" class="flex-1 bg-gold px-3 py-2 text-center text-xs font-semibold text-navy">English</a>
+          <a href="zh/index.html" hreflang="zh-Hans" lang="zh-Hans" class="flex-1 px-3 py-2 text-center text-xs font-semibold text-white hover:text-gold">&#20013;&#25991;</a>
+        </div>
+        <a href="contact.html" class="mt-2 block rounded bg-gold px-3 py-2.5 text-center text-sm font-semibold text-navy">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="main">
+    <!-- ============================= PAGE HERO ============================= -->
+    <section id="page-hero" class="relative isolate overflow-hidden bg-navy text-white">
+      <img src="assets/images/10.jpeg" alt="" class="absolute inset-0 h-full w-full object-cover opacity-20" />
+      <div class="absolute inset-0 bg-gradient-to-r from-navy via-navy/95 to-navy/60"></div>
+      <div class="relative mx-auto max-w-content px-6 py-20 lg:py-28">
+        <nav class="mb-4 text-xs text-mist" aria-label="Breadcrumb">
+          <a href="index.html" class="hover:text-gold">Home</a>
+          <span class="mx-2 text-white/30">/</span>
+          <span class="text-gold">Investment</span>
+        </nav>
+        <h1 class="max-w-3xl text-4xl font-semibold leading-tight sm:text-5xl">Invest in South Sudan</h1>
+        <p class="mt-5 max-w-2xl text-lg text-mist">
+          A young nation with abundant natural resources, a strategic location and a growing appetite for
+          international partnership.
+        </p>
+        <div class="mt-9 flex flex-wrap gap-4">
+          <a href="contact.html" class="rounded bg-gold px-6 py-3 text-sm font-semibold text-navy transition hover:bg-gold-dark">Register your interest</a>
+          <a href="#sectors" class="rounded border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:border-gold hover:text-gold">Priority sectors</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= WHY INVEST ============================= -->
+    <section id="why-invest" class="bg-white py-20 lg:py-28">
+      <div class="mx-auto max-w-content px-6">
+        <div class="max-w-2xl">
+          <span class="text-xs font-semibold uppercase tracking-[0.3em] text-gold-dark">The opportunity</span>
+          <h2 class="mt-3 text-3xl font-semibold text-navy sm:text-4xl">Why invest in South Sudan</h2>
+          <div class="rule-gold my-6"></div>
+          <!-- COPY: investment proposition -->
+          <p class="text-slate-600">A frontier market with untapped potential across agriculture, energy, infrastructure and beyond.</p>
+        </div>
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <!-- COPY: repeat for each advantage -->
+          <article class="rounded-lg border border-slate-200 p-7">
+            <h3 class="text-lg font-semibold text-navy">Natural resources</h3>
+            <p class="mt-2 text-sm text-slate-600">Fertile land, water, minerals, oil and gas reserves.</p>
+          </article>
+          <article class="rounded-lg border border-slate-200 p-7">
+            <h3 class="text-lg font-semibold text-navy">Strategic location</h3>
+            <p class="mt-2 text-sm text-slate-600">A gateway between East, Central and North Africa.</p>
+          </article>
+          <article class="rounded-lg border border-slate-200 p-7">
+            <h3 class="text-lg font-semibold text-navy">Young population</h3>
+            <p class="mt-2 text-sm text-slate-600">A dynamic, growing and increasingly skilled workforce.</p>
+          </article>
+          <article class="rounded-lg border border-slate-200 p-7">
+            <h3 class="text-lg font-semibold text-navy">Market access</h3>
+            <p class="mt-2 text-sm text-slate-600">Membership of regional trade communities and blocs.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= PRIORITY SECTORS ============================= -->
+    <section id="sectors" class="bg-navy-50 py-20 lg:py-28">
+      <div class="mx-auto max-w-content px-6">
+        <div class="max-w-2xl">
+          <span class="text-xs font-semibold uppercase tracking-[0.3em] text-gold-dark">Focus</span>
+          <h2 class="mt-3 text-3xl font-semibold text-navy sm:text-4xl">Priority sectors</h2>
+          <div class="rule-gold my-6"></div>
+        </div>
+        <div class="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <!-- COPY: repeat sector card (image-top RDB-style card) -->
+          <article class="group flex flex-col overflow-hidden rounded-lg bg-white shadow-card ring-1 ring-slate-100 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+            <div class="relative aspect-[4/3] overflow-hidden">
+              <img src="assets/images/6.jpeg" alt="Agricultural cultivation and farm production in South Sudan" loading="lazy" decoding="async" class="h-full w-full object-cover transition duration-500 ease-out group-hover:scale-105" />
+              <span class="absolute left-4 top-4 rounded bg-navy/90 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-gold">Agriculture</span>
+            </div>
+            <div class="flex flex-1 flex-col p-6">
+              <h3 class="text-lg font-semibold text-navy">Agriculture &amp; Agribusiness</h3>
+              <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">Cash crops, oilseeds and horticulture with strong value-addition and processing potential.</p>
+              <div class="mt-5 flex items-center justify-between gap-3">
+                <a href="trade-exports.html" class="inline-flex items-center gap-1.5 text-sm font-semibold text-navy transition hover:text-gold-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-dark">
+                  Learn more
+                  <svg class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                </a>
+                <a href="contact.html" class="rounded bg-navy px-4 py-2 text-xs font-semibold text-white transition hover:bg-navy-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-dark">Inquire</a>
+              </div>
+            </div>
+          </article>
+          <article class="group flex flex-col overflow-hidden rounded-lg bg-white shadow-card ring-1 ring-slate-100 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+            <div class="relative aspect-[4/3] overflow-hidden">
+              <img src="assets/images/10.jpg" alt="Highway construction and civil infrastructure in South Sudan" loading="lazy" decoding="async" class="h-full w-full object-cover transition duration-500 ease-out group-hover:scale-105" />
+              <span class="absolute left-4 top-4 rounded bg-navy/90 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-gold">Infrastructure</span>
+            </div>
+            <div class="flex flex-1 flex-col p-6">
+              <h3 class="text-lg font-semibold text-navy">Infrastructure &amp; Construction</h3>
+              <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">Roads, bridges, ports, housing and urban utilities that enable regional connectivity.</p>
+              <div class="mt-5 flex items-center justify-between gap-3">
+                <a href="trade-exports.html" class="inline-flex items-center gap-1.5 text-sm font-semibold text-navy transition hover:text-gold-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-dark">
+                  Learn more
+                  <svg class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                </a>
+                <a href="contact.html" class="rounded bg-navy px-4 py-2 text-xs font-semibold text-white transition hover:bg-navy-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-dark">Inquire</a>
+              </div>
+            </div>
+          </article>
+          <article class="group flex flex-col overflow-hidden rounded-lg bg-white shadow-card ring-1 ring-slate-100 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+            <div class="relative aspect-[4/3] overflow-hidden">
+              <img src="assets/images/22.jpeg" alt="Modern logistics and warehouse distribution facility" loading="lazy" decoding="async" class="h-full w-full object-cover transition duration-500 ease-out group-hover:scale-105" />
+              <span class="absolute left-4 top-4 rounded bg-navy/90 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-gold">Transport</span>
+            </div>
+            <div class="flex flex-1 flex-col p-6">
+              <h3 class="text-lg font-semibold text-navy">Transport &amp; Logistics</h3>
+              <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">Trade corridors, warehousing, cold chain and regional distribution networks.</p>
+              <div class="mt-5 flex items-center justify-between gap-3">
+                <a href="trade-exports.html" class="inline-flex items-center gap-1.5 text-sm font-semibold text-navy transition hover:text-gold-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-dark">
+                  Learn more
+                  <svg class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                </a>
+                <a href="contact.html" class="rounded bg-navy px-4 py-2 text-xs font-semibold text-white transition hover:bg-navy-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-dark">Inquire</a>
+              </div>
+            </div>
+          </article>
+          <article class="group flex flex-col overflow-hidden rounded-lg bg-white shadow-card ring-1 ring-slate-100 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+            <div class="relative aspect-[4/3] overflow-hidden">
+              <img src="assets/images/8.jpeg" alt="Solar energy and distributed renewable power installations" loading="lazy" decoding="async" class="h-full w-full object-cover transition duration-500 ease-out group-hover:scale-105" />
+              <span class="absolute left-4 top-4 rounded bg-navy/90 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-gold">Energy</span>
+            </div>
+            <div class="flex flex-1 flex-col p-6">
+              <h3 class="text-lg font-semibold text-navy">Energy &amp; Renewable Solutions</h3>
+              <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">Solar, hydro and distributed power for industry, commerce and communities.</p>
+              <div class="mt-5 flex items-center justify-between gap-3">
+                <a href="trade-exports.html" class="inline-flex items-center gap-1.5 text-sm font-semibold text-navy transition hover:text-gold-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-dark">
+                  Learn more
+                  <svg class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                </a>
+                <a href="contact.html" class="rounded bg-navy px-4 py-2 text-xs font-semibold text-white transition hover:bg-navy-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-dark">Inquire</a>
+              </div>
+            </div>
+          </article>
+          <article class="group flex flex-col overflow-hidden rounded-lg bg-white shadow-card ring-1 ring-slate-100 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+            <div class="relative aspect-[4/3] overflow-hidden">
+              <img src="assets/images/24.jpeg" alt="Mineral exploration and mining operations in South Sudan" loading="lazy" decoding="async" class="h-full w-full object-cover transition duration-500 ease-out group-hover:scale-105" />
+              <span class="absolute left-4 top-4 rounded bg-navy/90 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-gold">Mining</span>
+            </div>
+            <div class="flex flex-1 flex-col p-6">
+              <h3 class="text-lg font-semibold text-navy">Mining &amp; Minerals</h3>
+              <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">Gold, base metals and industrial minerals with growing exploration interest.</p>
+              <div class="mt-5 flex items-center justify-between gap-3">
+                <a href="trade-exports.html" class="inline-flex items-center gap-1.5 text-sm font-semibold text-navy transition hover:text-gold-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-dark">
+                  Learn more
+                  <svg class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                </a>
+                <a href="contact.html" class="rounded bg-navy px-4 py-2 text-xs font-semibold text-white transition hover:bg-navy-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-dark">Inquire</a>
+              </div>
+            </div>
+          </article>
+          <article class="group flex flex-col overflow-hidden rounded-lg bg-white shadow-card ring-1 ring-slate-100 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+            <div class="relative aspect-[4/3] overflow-hidden">
+              <img src="assets/images/25.jpg" alt="Livestock herding and freshwater fisheries in South Sudan" loading="lazy" decoding="async" class="h-full w-full object-cover transition duration-500 ease-out group-hover:scale-105" />
+              <span class="absolute left-4 top-4 rounded bg-navy/90 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-gold">Livestock</span>
+            </div>
+            <div class="flex flex-1 flex-col p-6">
+              <h3 class="text-lg font-semibold text-navy">Livestock &amp; Fisheries</h3>
+              <p class="mt-2 flex-1 text-sm leading-relaxed text-slate-600">Cattle, hides and skins, and freshwater fisheries across the Nile basin.</p>
+              <div class="mt-5 flex items-center justify-between gap-3">
+                <a href="trade-exports.html" class="inline-flex items-center gap-1.5 text-sm font-semibold text-navy transition hover:text-gold-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-dark">
+                  Learn more
+                  <svg class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+                </a>
+                <a href="contact.html" class="rounded bg-navy px-4 py-2 text-xs font-semibold text-white transition hover:bg-navy-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-dark">Inquire</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= INCENTIVES / SUPPORT ============================= -->
+    <section id="incentives" class="bg-white py-20 lg:py-28">
+      <div class="mx-auto grid max-w-content gap-14 px-6 lg:grid-cols-2">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-[0.3em] text-gold-dark">Support</span>
+          <h2 class="mt-3 text-3xl font-semibold text-navy sm:text-4xl">How SSIETIB supports investors</h2>
+          <div class="rule-gold my-6"></div>
+          <!-- COPY: investor support bullets -->
+          <ul class="space-y-5">
+            <li class="flex gap-4">
+              <span class="mt-1 flex h-6 w-6 flex-none items-center justify-center rounded-full bg-gold text-xs font-bold text-navy">1</span>
+              <p class="text-slate-600"><strong class="text-navy">Opportunity identification.</strong> Curated pipelines aligned to your mandate.</p>
+            </li>
+            <li class="flex gap-4">
+              <span class="mt-1 flex h-6 w-6 flex-none items-center justify-center rounded-full bg-gold text-xs font-bold text-navy">2</span>
+              <p class="text-slate-600"><strong class="text-navy">Government liaison.</strong> Introductions and coordination with relevant authorities.</p>
+            </li>
+            <li class="flex gap-4">
+              <span class="mt-1 flex h-6 w-6 flex-none items-center justify-center rounded-full bg-gold text-xs font-bold text-navy">3</span>
+              <p class="text-slate-600"><strong class="text-navy">Information &amp; analysis.</strong> Market, regulatory and partner due diligence.</p>
+            </li>
+            <li class="flex gap-4">
+              <span class="mt-1 flex h-6 w-6 flex-none items-center justify-center rounded-full bg-gold text-xs font-bold text-navy">4</span>
+              <p class="text-slate-600"><strong class="text-navy">Aftercare.</strong> Ongoing support as projects move to operation.</p>
+            </li>
+          </ul>
+          <a href="trade-exports.html" class="mt-8 inline-flex rounded bg-navy px-6 py-3 text-sm font-semibold text-white transition hover:bg-navy-700">See trade &amp; export services</a>
+        </div>
+        <div class="grid gap-6 sm:grid-cols-2">
+          <!-- COPY: key facts / statistics -->
+          <div class="rounded-lg bg-navy p-7 text-white">
+            <p class="text-3xl font-semibold text-gold">64M+</p>
+            <p class="mt-1 text-sm text-mist">Hectares of arable land</p>
+          </div>
+          <div class="rounded-lg bg-navy p-7 text-white">
+            <p class="text-3xl font-semibold text-gold">7</p>
+            <p class="mt-1 text-sm text-mist">Neighbouring countries</p>
+          </div>
+          <div class="rounded-lg bg-navy p-7 text-white">
+            <p class="text-3xl font-semibold text-gold">12M+</p>
+            <p class="mt-1 text-sm text-mist">Population and growing</p>
+          </div>
+          <div class="rounded-lg bg-navy p-7 text-white">
+            <p class="text-3xl font-semibold text-gold">100%</p>
+            <p class="mt-1 text-sm text-mist">Repatriation of profits*</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Investment Inquiry Form -->
+    <section id="investment-inquiry" class="bg-white py-20 lg:py-24">
+      <div class="mx-auto max-w-content px-6">
+        <div class="max-w-2xl">
+          <p class="text-xs font-semibold uppercase tracking-[0.3em] text-gold-dark">Enquiry</p>
+          <h2 class="mt-3 text-3xl font-semibold text-navy sm:text-4xl">Investment inquiry</h2>
+          <div class="rule-gold my-6"></div>
+        </div>
+
+        <form name="investment-inquiry" method="POST" data-netlify="true" class="mt-10 rounded-lg bg-navy-50 p-8 ring-1 ring-slate-100">
+          <input type="hidden" name="form-name" value="investment-inquiry" />
+
+          <div class="grid gap-5 sm:grid-cols-2">
+            <div>
+              <label for="inquiry-name" class="block text-sm font-medium text-navy">Full Name <span class="text-gold-dark">*</span></label>
+              <input id="inquiry-name" name="full-name" type="text" required autocomplete="name"
+                class="mt-2 w-full rounded border border-slate-300 bg-white px-4 py-3 text-sm focus:border-navy focus:outline-none" />
+            </div>
+            <div>
+              <label for="inquiry-email" class="block text-sm font-medium text-navy">Email Address <span class="text-gold-dark">*</span></label>
+              <input id="inquiry-email" name="email" type="email" required autocomplete="email"
+                class="mt-2 w-full rounded border border-slate-300 bg-white px-4 py-3 text-sm focus:border-navy focus:outline-none" />
+            </div>
+            <div class="sm:col-span-2">
+              <label for="inquiry-company" class="block text-sm font-medium text-navy">Company / Organization</label>
+              <input id="inquiry-company" name="company" type="text" autocomplete="organization"
+                class="mt-2 w-full rounded border border-slate-300 bg-white px-4 py-3 text-sm focus:border-navy focus:outline-none" />
+            </div>
+            <div class="sm:col-span-2">
+              <label for="inquiry-message" class="block text-sm font-medium text-navy">Message / Inquiry Details <span class="text-gold-dark">*</span></label>
+              <textarea id="inquiry-message" name="message" rows="6" required
+                class="mt-2 w-full rounded border border-slate-300 bg-white px-4 py-3 text-sm focus:border-navy focus:outline-none"></textarea>
+            </div>
+          </div>
+
+          <div class="mt-6 flex flex-wrap items-center gap-4">
+            <button type="submit" class="rounded bg-gold px-7 py-3.5 text-sm font-semibold text-navy transition hover:bg-gold-dark">Submit Inquiry</button>
+            <p class="text-xs text-slate-500">We aim to respond within two business days.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============================= CTA ============================= -->
+    <section id="cta" class="bg-gold">
+      <div class="mx-auto flex max-w-content flex-col items-center justify-between gap-6 px-6 py-14 text-center lg:flex-row lg:text-left">
+        <div>
+          <h2 class="text-2xl font-semibold text-navy sm:text-3xl">Start your investment journey</h2>
+          <p class="mt-2 text-navy/80">Connect with our investment facilitation team today.</p>
+        </div>
+        <a href="contact.html" class="rounded bg-navy px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-navy-700">Contact our team</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================= FOOTER ============================= -->
+    <footer class="bg-charcoal text-slate-300">
+    <!-- Legal disclaimer band (prominent) -->
+    <div class="border-b border-white/10 bg-charcoal-dark">
+      <div class="mx-auto max-w-content px-6 py-6">
+        <p class="text-center text-xs leading-relaxed">
+          <strong class="font-semibold text-white">Disclaimer:</strong>
+          The South Sudan International Economic, Trade and Investment Bureau (SS-IETIB) is an independent, private,
+          non-governmental and non-profit organization. It is not a government agency, is not affiliated with any
+          government or state body, and does not represent any government. Nothing on this website constitutes legal,
+          financial or investment advice.
+        </p>
+      </div>
+    </div>
+
+    <div class="mx-auto grid max-w-content gap-10 px-6 py-16 md:grid-cols-2 lg:grid-cols-4">
+      <div>
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="assets/images/logo.jpeg" alt="SSIETIB emblem" class="h-11 w-11 rounded object-cover ring-1 ring-gold/40" />
+          <span class="leading-tight">
+            <span class="block text-base font-semibold text-white">SSIETIB</span>
+            <span class="block text-[10px] uppercase tracking-[0.2em] text-gold">Economic &middot; Trade &middot; Investment</span>
+          </span>
+        </a>
+        <p class="mt-5 text-sm">
+          The South Sudan International Economic, Trade and Investment Bureau &mdash; an independent, private,
+          non-governmental and non-profit organization promoting trade and investment.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-sm font-semibold uppercase tracking-widest text-white">Explore</h2>
+        <ul class="mt-5 space-y-3 text-sm">
+          <li><a href="about.html" class="hover:text-gold">About Us</a></li>
+          <li><a href="trade-exports.html" class="hover:text-gold">Trade &amp; Exports</a></li>
+          <li><a href="investment.html" class="hover:text-gold">Invest in South Sudan</a></li>
+          <li><a href="network.html" class="hover:text-gold">Business Network</a></li>
+          <li><a href="international-cooperation.html" class="hover:text-gold">International Cooperation</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-sm font-semibold uppercase tracking-widest text-white">Resources</h2>
+        <ul class="mt-5 space-y-3 text-sm">
+          <li><a href="events.html" class="hover:text-gold">Events &amp; Trade Missions</a></li>
+          <li><a href="research-publications.html" class="hover:text-gold">Research &amp; Publications</a></li>
+          <li><a href="news.html" class="hover:text-gold">News &amp; Updates</a></li>
+          <li><a href="#" class="hover:text-gold">Careers</a></li>
+          <li><a href="#" class="hover:text-gold">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-sm font-semibold uppercase tracking-widest text-white">Contact</h2>
+        <ul class="mt-5 space-y-3 text-sm">
+          <li>Juba, Central Equatoria<br />Republic of South Sudan</li>
+          <li><a href="mailto:info@ssietib.org" class="hover:text-gold">info@ssietib.org</a></li>
+          <li><a href="tel:+211927088875" class="hover:text-gold">+211 927 088 875</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-white/10 bg-charcoal-dark">
+      <div class="mx-auto flex max-w-content flex-col items-center justify-between gap-3 px-6 py-6 text-xs md:flex-row">
+        <p>&copy; <span data-year>2026</span> SSIETIB. All rights reserved.</p>
+        <p>An independent, private, non-governmental and non-profit organization.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
