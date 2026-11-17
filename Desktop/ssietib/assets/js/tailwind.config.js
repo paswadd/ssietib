@@ -16,30 +16,30 @@ tailwind.config = {
     extend: {
       colors: {
         navy: {
-          DEFAULT: "#0A192F",
-          50: "#F2F6FC",
-          100: "#DCE6F5",
-          200: "#B4C7E7",
-          300: "#7F9DD1",
-          400: "#4A6FA8",
-          500: "#22477F",
-          600: "#143360",
-          700: "#0E2547",
-          800: "#0A192F",
-          900: "#06101E",
+          DEFAULT: "#0B1220",
+          50: "#EFF6FF",
+          100: "#DBEAFE",
+          200: "#BFDBFE",
+          300: "#93C5FD",
+          400: "#60A5FA",
+          500: "#3B82F6",
+          600: "#2563EB",
+          700: "#1D4ED8",
+          800: "#0F172A",
+          900: "#071021",
         },
         gold: {
-          DEFAULT: "#D4AF37",
-          light: "#E6C766",
-          dark: "#8A6A1F",
+          DEFAULT: "#FBBF24",
+          light: "#FDE047",
+          dark: "#F59E0B",
         },
         charcoal: {
-          DEFAULT: "#22272B",
-          light: "#3A4149",
-          dark: "#14181C",
+          DEFAULT: "#18181B",
+          light: "#27272A",
+          dark: "#09090B",
         },
-        ink: "#22272B",
-        mist: "#A0B3C6",
+        ink: "#0F172A",
+        mist: "#CBD5E1",
       },
       fontFamily: {
         sans: ["Inter", "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif"],
@@ -49,7 +49,7 @@ tailwind.config = {
         content: "1280px",
       },
       boxShadow: {
-        card: "0 10px 30px -12px rgba(10, 25, 47, 0.25)",
+        card: "0 18px 40px -16px rgba(30, 64, 175, 0.45)",
       },
       keyframes: {
         "fade-up": {

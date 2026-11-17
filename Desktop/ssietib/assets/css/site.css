@@ -23,8 +23,9 @@
   top: -4rem;
   z-index: 100;
   border-radius: 0.25rem;
-  background: #d4af37;
-  color: #0a192f;
+  background: #f59e0b;
+  color: #0b1220;
+  box-shadow: 0 8px 24px -8px rgba(245, 158, 11, 0.65);
   padding: 0.625rem 1rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -48,8 +49,8 @@
 
 /* Active primary navigation link (desktop) */
 [data-nav-link].is-active {
-  color: #d4af37;
-  border-bottom-color: #d4af37;
+  color: #fbbf24;
+  border-bottom-color: #fbbf24;
 }
 
 /* Active navigation link (mobile + dropdown) */
@@ -59,15 +60,16 @@
   font-weight: 600;
 }
 [data-nav-menu] [data-nav-link].is-active {
-  color: #d4af37;
+  color: #fbbf24;
 }
 
 /* Thin gold rule used under section headings */
 .rule-gold {
   width: 3.5rem;
   height: 0.25rem;
-  background-color: #d4af37;
+  background: linear-gradient(90deg, #fbbf24, #f59e0b 60%, #38bdf8);
   border-radius: 9999px;
+  box-shadow: 0 0 12px -2px rgba(251, 191, 36, 0.7);
 }
 
 /* Accessible focus ring consistent across the site */
@@ -77,7 +79,7 @@ input:focus-visible,
 textarea:focus-visible,
 select:focus-visible,
 [tabindex]:focus-visible {
-  outline: 2px solid #d4af37;
+  outline: 2px solid #fbbf24;
   outline-offset: 2px;
   border-radius: 0.125rem;
 }
