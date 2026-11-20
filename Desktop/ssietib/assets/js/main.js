@@ -98,5 +98,39 @@
     document.querySelectorAll("[data-year]").forEach(function (el) {
       el.textContent = "2026";
     });
+
+    /* ---- Contact form: sector pre-selection from query param ---- */
+    (function () {
+      var params = new URLSearchParams(window.location.search || "");
+      var sector = params.get("sector");
+      if (!sector) return;
+      var subject = document.getElementById("subject");
+      if (subject) {
+        var match = Array.prototype.slice.call(subject.options).find(function (o) {
+          return o.value === sector || o.text === sector;
+        });
+        if (match) {
+          subject.value = match.value;
+        } else {
+          var opt = document.createElement("option");
+          opt.value = sector;
+          opt.textContent = sector;
+          opt.selected = true;
+          subject.appendChild(opt);
+        }
+      }
+      var message = document.getElementById("message") || document.getElementById("inquiry-message") || document.getElementById("trade-message");
+      if (message && !message.value) {
+        message.value = "I would like to inquire about opportunities in the " + sector + " sector.";
+      }
+      var hidden = document.querySelector('form[name="contact"]');
+      if (hidden && !hidden.querySelector('input[name="sector"]')) {
+        var inp = document.createElement("input");
+        inp.type = "hidden";
+        inp.name = "sector";
+        inp.value = sector;
+        hidden.appendChild(inp);
+      }
+    })();
   });
 })();
