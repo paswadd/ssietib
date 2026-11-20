@@ -106,38 +106,25 @@ select:focus-visible,
 }
 
 .reveal {
-  opacity: 0;
-  translate: 0 1.5rem;
-  transition: all 700ms ease-out;
+  opacity: 0.15;
+  transform: translateY(12px);
+  transition: opacity 0.35s ease-out, transform 0.35s ease-out;
 }
 
 .reveal.is-visible {
   opacity: 1;
-  translate: 0 0;
+  transform: translateY(0);
 }
 
-.delay-100 {
-  transition-delay: 100ms;
+.delay-100,
+.delay-200,
+.delay-300,
+.reveal-stagger > .reveal {
+  transition-delay: 60ms;
 }
 
-.delay-200 {
-  transition-delay: 200ms;
-}
-
-.delay-300 {
-  transition-delay: 300ms;
-}
-
-.reveal-stagger > .reveal:nth-child(2) {
-  transition-delay: 100ms;
-}
-
-.reveal-stagger > .reveal:nth-child(3) {
-  transition-delay: 200ms;
-}
-
-.reveal-stagger > .reveal:nth-child(n + 4) {
-  transition-delay: 300ms;
+.reveal.is-visible.hover\:-translate-y-1:hover {
+  transform: translateY(-0.25rem);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -152,8 +139,12 @@ select:focus-visible,
 
   .reveal {
     opacity: 1 !important;
-    translate: none !important;
+    transform: none !important;
     transition: none !important;
+  }
+
+  .reveal.is-visible.hover\:-translate-y-1:hover {
+    transform: none !important;
   }
 
   .reveal-stagger > .reveal {

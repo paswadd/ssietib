@@ -100,13 +100,22 @@
     });
 
     var revealElements = document.querySelectorAll(".reveal");
+    var revealObserver = null;
+    var viewportHeight = window.innerHeight;
+
+    revealElements.forEach(function (el) {
+      var rect = el.getBoundingClientRect();
+      if (rect.top <= viewportHeight && rect.bottom >= 0) {
+        el.classList.add("is-visible");
+      }
+    });
 
     if (!("IntersectionObserver" in window)) {
       revealElements.forEach(function (el) {
         el.classList.add("is-visible");
       });
     } else {
-      var revealObserver = new IntersectionObserver(
+      revealObserver = new IntersectionObserver(
         function (entries, observer) {
           entries.forEach(function (entry) {
             if (entry.isIntersecting) {
@@ -115,13 +124,20 @@
             }
           });
         },
-        { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+        { threshold: 0.02, rootMargin: "0px 0px 80px 0px" }
       );
 
       revealElements.forEach(function (el) {
-        revealObserver.observe(el);
+        if (!el.classList.contains("is-visible")) revealObserver.observe(el);
       });
     }
+
+    window.setTimeout(function () {
+      revealElements.forEach(function (el) {
+        el.classList.add("is-visible");
+      });
+      if (revealObserver) revealObserver.disconnect();
+    }, 800);
 
     /* ---- Contact form: sector pre-selection from query param ---- */
     (function () {
