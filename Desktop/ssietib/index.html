@@ -54,7 +54,7 @@
 <style>@keyframes ssietib-spin{to{transform:rotate(360deg)}}</style>
 <script>
   (function(){
-    var start=Date.now(),minMs=1200,done=false;
+    var start=Date.now(),minMs=2000,done=false;
     var hide=function(){
       if(done)return;done=true;
       var el=document.getElementById("ssietib-preloader");
@@ -63,7 +63,7 @@
     window.addEventListener("load",function(){
       setTimeout(hide,Math.max(0,minMs-(Date.now()-start)));
     });
-    setTimeout(hide,2500);
+    setTimeout(hide,3500);
   })();
 </script>
 
